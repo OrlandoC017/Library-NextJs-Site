@@ -418,6 +418,8 @@ FEATURES
 
 .book__link {
   color: #242424;
+  display: flex;
+  align-items: center;
 }
 
 .book__img--wrapper {
@@ -598,11 +600,13 @@ select {
 
 .book__selected {
   display: flex;
+  gap: 40px;
+  margin: 40px 0;
 }
 
 .book__selected--figure {
   width: 40%;
-  padding: 16px 32px;
+  padding: 24px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -612,11 +616,13 @@ select {
   max-height: 500px;
   width: auto;
   max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .book__selected--description {
   width: 60%;
-  padding: 16px 32px;
+  padding: 24px 32px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -624,7 +630,7 @@ select {
 
 .book__selected--top {
   padding: 0 24px;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
   font-size: 32px;
   color: #242424;
   display: flex;
@@ -645,11 +651,16 @@ select {
 }
 
 .book__summary {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  line-height: 1.8;
+  color: #606266;
 }
 
 .book__selected--title {
-  margin-bottom: 8px
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 28px;
+  color: #242424;
 }
 
 .book__summary--title {
@@ -660,10 +671,20 @@ select {
   margin-bottom: 16px;
 }
 
-.book__price {
-  font-size: 16px;
-  margin: 8px 0 24px 0;
+.book__summary__btn--wrapper {
+  margin-top: 24px;
 }
+
+.book__price {
+  font-size: 18px;
+  margin: 16px 0 24px 0;
+  font-weight: 500;
+}
+
+.book__selected--price {
+  margin: 16px 0 32px 0;
+}
+
 
 .link__breadcrumbs {
   color: #bfbfbf;

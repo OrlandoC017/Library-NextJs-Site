@@ -39,7 +39,7 @@ export default function Books({ books: initialBooks }: { books: any[] }) {
             <div className="books">
               {books
                  .map((book: any) => (
-                    <Book book = {book} rating={book.rating} rkey = {book.id} title={book.title} url={book.url} originalPrice={book.originalPrice} salePrice={book.salePrice} />
+                    <Book book = {book} rating={book.rating} key = {book.id} title={book.title} url={book.url} originalPrice={book.originalPrice} salePrice={book.salePrice} />
                 ))}
             </div>
           </div>
